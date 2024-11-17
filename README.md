@@ -1,8 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Better Used Tesla Trawling
+
+A web application that helps you search and compare used Tesla vehicles with enhanced filtering capabilities and detailed hardware version information.
+
+## Live Site
+You can view a live version of the site at [butt.thomasburgess.dev](https://butt.thomasburgess.dev).
+
+## Features
+
+- **Advanced Search**: Filter Tesla inventory by model, year, price, and hardware version
+- **Hardware Version Detection**: Automatically detects whether a Tesla has HW3 or HW4 based on VIN and manufacturing date
+- **Side-by-Side Comparison**: Select multiple vehicles to compare their specifications
+- **Price Calculation**: Toggle between different price views including:
+  - Base price
+  - Price with transport fees
+  - Price with estimated taxes
+- **Detailed Vehicle Information**: View comprehensive details including:
+  - Range estimates
+  - Acceleration specs
+  - FSD (Full Self-Driving) status
+  - Interior/exterior colors
+  - VIN details
+  - Factory dates
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +43,28 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **UI Components**: 
+  - Radix UI primitives
+  - Shadcn/ui components
+- **Form Handling**: React Hook Form
+- **TypeScript**: For type safety and better developer experience
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `/src/app`: Main application pages and layouts
+- `/src/components`: Reusable UI components
+- `/src/hooks`: Custom React hooks
+- `/src/lib`: Utility functions and shared code
+- `/src/types`: TypeScript type definitions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by Thomas Burgess, 2024. All rights reserved.
