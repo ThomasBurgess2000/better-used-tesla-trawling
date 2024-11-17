@@ -601,6 +601,13 @@ export default function InventoryPage() {
                             </DialogTitle>
                             <DialogDescription>
                               VIN: {vehicle.VIN}
+                              <Link 
+                                href={`https://www.tesla.com/${vehicle.Model}/order/${vehicle.VIN}`}
+                                target="_blank"
+                                className="block text-blue-500 hover:underline mt-1"
+                              >
+                                View on Tesla.com
+                              </Link>
                             </DialogDescription>
                           </DialogHeader>
                           <div className="grid gap-4 py-4">
