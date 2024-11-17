@@ -2,6 +2,8 @@
 
 A web application that helps you search and compare used Tesla vehicles with enhanced filtering capabilities and detailed hardware version information.
 
+<img width="803" alt="image" src="https://github.com/user-attachments/assets/3babb533-70af-42df-a198-d5ffccb775e7">
+
 ## Live Site
 You can view a live version of the site at [butt.thomasburgess.dev](https://butt.thomasburgess.dev).
 
