@@ -1,0 +1,17 @@
+.git
+node_modules
+.next
+dist
+out
+.env*
+!.env.example
+*.log
+*.pid
+*.db
+*.db-*
+*.sqlite*
+*.tsbuildinfo
+server-exports
+backups
+.claude
+.codex
